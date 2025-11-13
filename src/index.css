@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #fff;
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+.wrapper {
+  width: 1280px;
+  margin: 50px auto;
+}
+header .logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+header ul.nav {
+  float: fight;
+  list-style: none;
+}
+header ul.nav li {
+  display: inline;
+  margin-left: 25px;
+  cursor: pointer;
+  transition: opacity 500ms;
+}
+header ul.nav li:hover {
+  opacity: 0.5;
+}
+header .presentation {
+  margin: 50px 0;
+  background: url('./img/presentation.jpeg') no-repeat center/cover;
+  width: 100%;
+  height: 500px;
+  background-blend-mode: multiply;
+  background-color: #bcbcbc;
+}
+header .presentation::after {
+  content: 'Лучшие товары для вашего дома';
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  font-size: 40px;
+  width: 300px;
+  font-weight: 600;
+  color: white;
+}
+header .presentation::before {
+  content: 'По низким ценам';
+  position: absolute;
+  top: 250px;
+  left: 50px;
+  font-size: 15px;
+  width: 300px;
+  color: white;
+  font-weight: 300;
+}
+footer {
+  text-align: center;
+  margin-top: 100px;
 }
